@@ -48,4 +48,10 @@ function deleteCheck(event){
         const todo = item.parentElement;
         todo.remove();
     }
+
+    // CHECKMARK
+    if(item.classList[0] === "complete-btn"){
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
+    }
 }
